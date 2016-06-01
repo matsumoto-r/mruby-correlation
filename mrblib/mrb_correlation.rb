@@ -14,12 +14,8 @@ class Array
   # correlation coefficient between self and arg array
   def correlation_coefficient_with(time_series_data)
     raise ArgumentError, "Can not use not same array size" unless self.size == time_series_data.size
-
     mean_x = self.arithmetic_mean
     mean_y = time_series_data.arithmetic_mean
-
-    cc = self.covariance(time_series_data, mean_x, mean_y) / Math.sqrt(self.variance(mean_x))
-    cc /= Math.sqrt(time_series_data.variance(mean_y))
-    cc
+    cc = self.covariance(time_series_data, mean_x, mean_y) / Math.sqrt(self.variance(mean_x)) / Math.sqrt(time_series_data.variance(mean_y))
   end
 end
