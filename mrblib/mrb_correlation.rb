@@ -11,6 +11,7 @@ class Array
     self.inject(0) { |sigma, x| sigma += (x - mean) ** 2 }
   end
 
+  # correlation coefficient between self and arg array
   def correlation_coefficient_with(time_series_data)
     raise ArgumentError, "Can not use not same array size" unless self.size == time_series_data.size
 
