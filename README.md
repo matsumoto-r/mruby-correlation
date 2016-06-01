@@ -10,7 +10,7 @@ MRuby::Build.new do |conf|
 
     # ... (snip) ...
 
-    conf.gem :github => 'matsumoto-r/mruby-correlation'
+    conf.gem :mgem => 'mruby-correlation'
 end
 ```
 
