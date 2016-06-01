@@ -1,6 +1,6 @@
 # mruby-correlation   [![Build Status](https://travis-ci.org/matsumoto-r/mruby-correlation.svg?branch=master)](https://travis-ci.org/matsumoto-r/mruby-correlation)
 
-Array extended for correlation coefficient
+Extended Array class for correlation coefficient
 
 ## install by mrbgems
 - add conf.gem line to `build_config.rb`
