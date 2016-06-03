@@ -12,3 +12,4 @@ compiler:
   - clang
 script:
   - rake test
+  - rake check
