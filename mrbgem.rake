@@ -5,4 +5,5 @@ MRuby::Gem::Specification.new('mruby-correlation') do |spec|
   spec.summary = 'Array extended for correlation coefficient'
   spec.add_dependency 'mruby-enumerator', core: 'mruby-enumerator'
   spec.add_dependency 'mruby-math', core: 'mruby-math'
+  spec.add_dependency 'mruby-io'
 end
